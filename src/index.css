@@ -1,13 +1,38 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Roboto+Slab&display=swap');
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
 
 body {
   margin: 0;
   font-family:  "Lato",Arial,Helvetica,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  min-width: 360px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Roboto Slab","Lato",Arial,Helvetica,sans-serif;
+}
+
+h1{
+  color: #D22630;
+}
+
+h3{
+  color: #707173;
+}
+
+h4{
+  color: #707173;
+  font-weight: normal;
+}
+
+h6{
+  color: #707173;
+  font-weight: normal;
 }
