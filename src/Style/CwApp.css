@@ -6,3 +6,34 @@
     min-height: 15rem;
     max-height: 15rem;
 }
+
+.bg-primary{
+    background-color: #D22630!important;
+}
+
+.cw-infobar .card{
+    margin-bottom: 1rem;
+}
+
+.cw-infobar .card-header{
+    background-color: unset;
+    border-bottom: none;
+    font-size: 2rem;
+    color: white;
+    font-family: "Roboto Slab","Lato",Arial,Helvetica,sans-serif;
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.cw-infobar .card-body{
+    color: white;
+    padding: 0;
+    padding-bottom: 1.25rem;
+}
+
+.cw-donate-btn{
+    font-size: 1.3rem;
+    font-family: "Lato",Arial,Helvetica,sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+}

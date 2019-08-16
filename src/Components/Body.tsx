@@ -2,6 +2,10 @@ import React from "react";
 import { MainContent } from "./MainContent";
 import { HomePage } from "./Pages/HomePage";
 import { PageTitles } from "../Constants/PageTitles";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import { InfoBar } from "./InfoBar/InfoBar";
 
 interface BodyState{
     mainTitle: string,
@@ -20,17 +24,17 @@ export class Body extends React.Component<{}, BodyState>{
 
     render(){
         return (
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-4">
-                        {/* TODO CREATE LEFT CONTENT */}
-                    </div>
-                    <div className="col-8">
+            <Container fluid>
+                <Row>
+                    <Col xs={4}>
+                        <InfoBar />
+                    </Col>
+                    <Col xs={8}>
                         <MainContent pageTitle={this.state.mainTitle}
                                      pageContent={this.state.mainContent} />
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }
