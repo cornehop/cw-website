@@ -31,3 +31,13 @@ h6{
   color: #707173;
   font-weight: normal;
 }
+
+a{
+  color: #D22630;
+  text-decoration: none;
+}
+
+a:hover{
+  color: black;
+  text-decoration: none;
+}

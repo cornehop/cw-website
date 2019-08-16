@@ -1,3 +1,4 @@
 export const PageTitles = {
-    HomePage: "Bună ziua (goedendag)!"
+    HomePage: "Bună ziua (goedendag)!",
+    SupportBlock: "Steunt u mij?"
 }
