@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 import { InfoBlock } from "./InfoBlock";
 import { SupportBlock } from "./Blocks/SupportBlock";
 import { PageTitles } from "../../Constants/PageTitles";
+import { NewsletterBlock } from "./Blocks/NewsletterBlock";
 
 export class InfoBar extends React.Component{
     render(){
@@ -18,7 +19,11 @@ export class InfoBar extends React.Component{
                     </Col>
                 </Row>
                 <Row>
-                    {/* TODO #10 Create newsletter block */}
+                    <Col>
+                        <InfoBlock title={PageTitles.NewsletterBlock}>
+                            <NewsletterBlock />
+                        </InfoBlock>
+                    </Col>
                 </Row>
             </Container>
         )
