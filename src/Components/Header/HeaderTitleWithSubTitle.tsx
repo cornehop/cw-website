@@ -5,7 +5,7 @@ export class HeaderTitleWithSubTitle extends React.Component{
         return (
             <div>
                 <h1>Carlos Wessels</h1>
-                <h3>Zendeling via Operatie Mobilisatie</h3>
+                <h3>Zendingswerker bij Operatie Mobilisatie in Moldavië</h3>
             </div>
         );
     }
