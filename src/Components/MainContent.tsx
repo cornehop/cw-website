@@ -1,4 +1,7 @@
 import React from "react";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 interface MainContentProps{
     pageTitle: string,
@@ -8,18 +11,18 @@ interface MainContentProps{
 export class MainContent extends React.Component<MainContentProps>{
     render(){
         return (
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-12">
+            <Container fluid>
+                <Row>
+                    <Col xs={12}>
                         <h2>{this.props.pageTitle}</h2>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-12">
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={12}>
                         {this.props.pageContent}
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         );
     }
 }
