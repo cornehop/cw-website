@@ -5,16 +5,13 @@ import Col from 'react-bootstrap/Col';
 
 export class SupportBlock extends React.Component{
     getText(){
+        // TODO Get some nice copy for this part
         return (
             <div>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Praesent ultrices sagittis ultricies. Morbi ultrices ipsum 
-                iaculis nisi lobortis imperdiet. Phasellus at ligula a 
-                lectus sagittis fermentum. Morbi in mi est. Curabitur vel 
-                elementum nulla, scelerisque vulputate dui. Nullam interdum, 
-                magna vel faucibus gravida, dolor odio fringilla lectus, a 
-                mollis velit augue in erat. Interdum et malesuada fames ac 
-                ante ipsum primis in faucibus. Vivamus eget rutrum justo.
+                TODO hier een goede uitnodigende tekst plaatsen...
+                U kunt mij steunen door voor mij en het team in Moldavië te bidden.
+                Daarnaast kan ik mijn werk alleen doen omdat mensen mij financieel steunen.
+                Wilt u mij steunen? Dan kunt u via de knop hieronder naar mijn donatiepagina van OM gaan.
             </div>
         )
     }
