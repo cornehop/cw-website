@@ -5,13 +5,12 @@ import Col from 'react-bootstrap/Col';
 
 export class SupportBlock extends React.Component{
     getText(){
-        // TODO Get some nice copy for this part
         return (
             <div>
-                TODO hier een goede uitnodigende tekst plaatsen...
-                U kunt mij steunen door voor mij en het team in Moldavië te bidden.
-                Daarnaast kan ik mijn werk alleen doen omdat mensen mij financieel steunen.
-                Wilt u mij steunen? Dan kunt u via de knop hieronder naar mijn donatiepagina van OM gaan.
+                Om mijn zendingswerk goed te kunnen uitvoeren heb ik u nodig. 
+                U kunt mij helpen door voor mij en het team in Moldavië te bidden. 
+                Verder kunt u mij financieel ondersteunen. Dit kan via de knop 
+                hieronder, deze brengt u naar mijn donatiepagina van OM.
             </div>
         )
     }
@@ -26,6 +25,7 @@ export class SupportBlock extends React.Component{
                     <Col>
                         <a href="https://www.operatiemobilisatie.nl/carloswessels" 
                            target="_blank"
+                           rel="noopener noreferrer"
                            className="btn btn-light btn-block cw-donate-btn">
                                DONEREN
                         </a>

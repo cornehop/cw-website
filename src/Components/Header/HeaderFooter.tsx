@@ -6,10 +6,10 @@ export class HeaderFooter extends React.Component{
         return(
             <Carousel nextIcon="" prevIcon="" indicators={false} controls={false}>
                 <Carousel.Item>
-                    <h6><a href="https://www.operatiemobilisatie.nl" target="_blank">Klik hier voor meer informatie over het werk van Operatie Mobilisatie in Nederland</a></h6>
+                    <h6><a href="https://www.operatiemobilisatie.nl" target="_blank" rel="noopener noreferrer">Klik hier voor meer informatie over het werk van Operatie Mobilisatie in Nederland</a></h6>
                 </Carousel.Item>
                 <Carousel.Item>
-                <h6><a href="https://www.om.org/md/en" target="_blank">Klik hier voor meer informatie over het werk van Operatie Mobilisatie in Moldavië</a></h6>
+                <h6><a href="https://www.om.org/md/en" target="_blank" rel="noopener noreferrer">Klik hier voor meer informatie over het werk van Operatie Mobilisatie in Moldavië</a></h6>
                 </Carousel.Item>
             </Carousel>
         );

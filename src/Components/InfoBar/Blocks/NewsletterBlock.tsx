@@ -17,15 +17,12 @@ export class NewsletterBlock extends React.Component{
     }
     
     getText(){
-        // TODO Get some nice copy for this part
         return (
             <div>
-                TODO hier een goede uitnodigende tekst plaatsen...
-                Wilt u op de hoogte blijven van mijn werk in Moldavië? 
-                Eens in de zoveel tijd verstuurt mijn thuisfront team 
-                een nieuwsbrief waarin ik vertel hoe het met mij gaat 
-                en wat we allemaal mogen doen. Wilt u deze ontvangen? 
-                Dan kunt u zich opgeven via onderstaand formulier.
+                Gedurende mijn verblijf in Moldavië worden er regelmatig 
+                filmpjes en nieuwsbrieven gemaakt waarin ik vertel wat ik 
+                in Moldavië doe en meemaak. Wilt u hiervan op de hoogte 
+                blijven? Vul dan uw naam en e-mailadres hieronder in.
             </div>
         )
     }
@@ -52,6 +49,7 @@ export class NewsletterBlock extends React.Component{
                     <Col>
                         <a href="https://www.operatiemobilisatie.nl/carloswessels" 
                             target="_blank"
+                            rel="noopener noreferrer"
                             className="btn btn-light btn-block cw-donate-btn">
                                 ABONNEREN
                         </a>

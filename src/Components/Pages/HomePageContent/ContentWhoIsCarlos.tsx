@@ -11,6 +11,7 @@ export class ContentWhoIsCarlos extends React.Component{
         return (
             <a href="https://www.om.org/en/ministry-profile/mission-discipleship-training"
                target="_blank"
+               rel="noopener noreferrer"
             > Mission Discipleship Training</a>
         )
     }
@@ -19,6 +20,7 @@ export class ContentWhoIsCarlos extends React.Component{
         return (
             <a href="https://www.om.org/md/en"
                target="_blank"
+               rel="noopener noreferrer"
             >Operatie Mobilisatie in Moldavië</a>
         )
     }
