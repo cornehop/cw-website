@@ -1,9 +1,6 @@
 import React from "react";
-import Image from 'react-bootstrap/Image';
+import { Container, Row, Col, Image } from 'react-bootstrap';
 import Picture from "../../../Assets/cw.jpg";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 
 export class ContentWhoIsCarlos extends React.Component{
@@ -11,6 +8,7 @@ export class ContentWhoIsCarlos extends React.Component{
         return (
             <a href="https://www.om.org/en/ministry-profile/mission-discipleship-training"
                target="_blank"
+               rel="noopener noreferrer"
             > Mission Discipleship Training</a>
         )
     }
@@ -19,6 +17,7 @@ export class ContentWhoIsCarlos extends React.Component{
         return (
             <a href="https://www.om.org/md/en"
                target="_blank"
+               rel="noopener noreferrer"
             >Operatie Mobilisatie in Moldavië</a>
         )
     }

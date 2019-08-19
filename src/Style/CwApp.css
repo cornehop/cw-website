@@ -11,8 +11,21 @@
     background-color: #D22630!important;
 }
 
+.text-muted{
+    color: white !important;
+    font-style: italic;
+}
+
 .cw-infobar .card{
     margin-bottom: 1rem;
+}
+
+.cw-infobar .card a{
+    color: white;
+}
+
+.cw-infobar .card a:hover{
+    color: black;
 }
 
 .cw-infobar .card-header{
@@ -32,8 +45,13 @@
 }
 
 .cw-donate-btn{
+    color: black !important;
     font-size: 1.3rem;
     font-family: "Lato",Arial,Helvetica,sans-serif;
     font-weight: bold;
+    margin-top: 1rem;
+}
+
+.cw-newsletterblock-form{
     margin-top: 1rem;
 }
