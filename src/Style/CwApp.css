@@ -1,5 +1,11 @@
+.cw-menu{
+    padding: 15px;
+    margin-bottom: 2rem;
+}
+
 .content-paragraph{
     margin-bottom: 3rem;
+    padding-left: 0;
 }
 
 .img-moldova-map{
