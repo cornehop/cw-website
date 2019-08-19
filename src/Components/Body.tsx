@@ -2,9 +2,7 @@ import React from "react";
 import { MainContent } from "./MainContent";
 import { HomePage } from "./Pages/HomePage";
 import { PageTitles } from "../Constants/PageTitles";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+import { Container, Row, Col } from 'react-bootstrap';
 import { InfoBar } from "./InfoBar/InfoBar";
 
 interface BodyState{

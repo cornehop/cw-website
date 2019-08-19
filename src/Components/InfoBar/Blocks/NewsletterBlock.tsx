@@ -1,9 +1,7 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import { TextInput } from "../../Inputs/TextInput";
-import { EmailInput } from "../../Inputs/EmailInput";
+import { Container, Row, Col } from 'react-bootstrap';
+// import { TextInput } from "../../Inputs/TextInput";
+// import { EmailInput } from "../../Inputs/EmailInput";
 
 export class NewsletterBlock extends React.Component{
     getSubscribtionEmailLink(){
@@ -18,11 +16,17 @@ export class NewsletterBlock extends React.Component{
     
     getText(){
         return (
+            // <div>
+            //     Gedurende mijn verblijf in Moldavië worden er regelmatig 
+            //     filmpjes en nieuwsbrieven gemaakt waarin ik vertel wat ik 
+            //     in Moldavië doe en meemaak. Wilt u hiervan op de hoogte 
+            //     blijven? Vul dan uw naam en e-mailadres hieronder in.
+            // </div>
             <div>
                 Gedurende mijn verblijf in Moldavië worden er regelmatig 
                 filmpjes en nieuwsbrieven gemaakt waarin ik vertel wat ik 
                 in Moldavië doe en meemaak. Wilt u hiervan op de hoogte 
-                blijven? Vul dan uw naam en e-mailadres hieronder in.
+                blijven? Dan kunt u zich aanmelden door een e-mail te sturen naar: {this.getSubscribtionEmailLink()}.
             </div>
         )
     }
@@ -33,7 +37,7 @@ export class NewsletterBlock extends React.Component{
                 <Row>
                     <Col>{this.getText()}</Col>
                 </Row>
-                <Row className="cw-newsletterblock-form">
+                {/* <Row className="cw-newsletterblock-form">
                     <Col xs={4}>Naam: </Col>
                     <Col xs={8}>
                         <TextInput id="newsletterblock-name" />
@@ -54,7 +58,7 @@ export class NewsletterBlock extends React.Component{
                                 ABONNEREN
                         </a>
                     </Col>
-                </Row>
+                </Row> */}
                 <Row>
                     <Col>
                         <small className="text-muted">
