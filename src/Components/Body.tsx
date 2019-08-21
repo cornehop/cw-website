@@ -16,10 +16,7 @@ export class Body extends React.Component<BodyProps>{
         return (
             <Container fluid>
                 <Row>
-                    <Col xs={4}>
-                        <InfoBar />
-                    </Col>
-                    <Col xs={8}>
+                    <Col xs={12} sm={6}>
                         <Container fluid>
                             <Row>
                                 <Col>
@@ -35,6 +32,9 @@ export class Body extends React.Component<BodyProps>{
                                 </Col>
                             </Row>
                         </Container>
+                    </Col>
+                    <Col xs={12} sm={6}>
+                        <InfoBar />
                     </Col>
                 </Row>
             </Container>

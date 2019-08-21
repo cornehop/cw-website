@@ -27,8 +27,8 @@ export class ContentMoldova extends React.Component{
                     <Col><h4>Moldavië</h4></Col>
                 </Row>
                 <Row>
-                    <Col className="align-self-center text-left">{this.getPicture()}</Col>
-                    <Col className="align-self-center">{this.getContentText()}</Col>
+                    <Col xs={12} sm={6} className="align-self-center text-left">{this.getPicture()}</Col>
+                    <Col xs={12} sm={6} className="align-self-center">{this.getContentText()}</Col>
                 </Row>
             </Container>
         )

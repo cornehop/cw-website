@@ -8,7 +8,6 @@ export class HomePage extends React.Component{
         return (
             <React.Fragment>
                 <ContentWhoIsCarlos />
-                <ContentMoldova />
                 <ContentWhyMoldova />
             </React.Fragment>
         );
