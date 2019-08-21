@@ -7,6 +7,15 @@ h3{
 }
 
 .cw-header{
+    background-color: white;
+    padding-bottom: 1rem;
+}
+
+.cw-header-left{
+    min-height: 125px;
+}
+
+.cw-header-right{
     background-position: right top;
     background-repeat: no-repeat;
     background-attachment: fixed;

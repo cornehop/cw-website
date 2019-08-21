@@ -19,7 +19,8 @@ export class ArchiveTable extends React.Component{
     private getFileLink(icon: JSX.Element, name: string, file: string){
         return (
             <a href={file}
-               target="_blank">
+               target="_blank"
+               rel="noopener noreferrer">
                    {icon} {name}
             </a>
         )
