@@ -2,7 +2,6 @@ import React from "react";
 import { Table } from "react-bootstrap";
 import { getArchiveCollection } from "../../../Constants/ArchiveCollection";
 import { ArchiveItem, ArchiveItemType } from "../../../Domain/ArchiveItem";
-import { formatDate } from "../../../Domain/CustomDate";
 import { FaRegFilePdf, FaRegFileVideo, FaRegQuestionCircle } from "react-icons/fa";
 
 export class ArchiveTable extends React.Component{

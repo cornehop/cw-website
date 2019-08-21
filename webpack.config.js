@@ -6,7 +6,7 @@ module.exports = {
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: [".ts", ".tsx", ".pdf"]
+        extensions: [".mjs", ".js", ".ts", ".tsx", ".pdf"]
     },
 
     module: {
@@ -32,6 +32,11 @@ module.exports = {
                 exclude: [/node_modules/],
                 loader: "file-loader"
             },
+            {
+                test: /\.(pdf)$/i,
+                exclude: [/node_modules/],
+                loader: "file-loader"
+            }
         ]
     },
 
