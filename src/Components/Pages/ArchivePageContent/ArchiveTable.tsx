@@ -32,7 +32,7 @@ export class ArchiveTable extends React.Component{
         publishedItems.map((item: ArchiveItem, index: number) => {
             let icon = this.getFileTypeIcon(item.itemType);
             let link = this.getFileLink(icon, item.name, item.file);
-            tableContent.push(
+            return tableContent.push(
                 <tr key={index}>
                     <td>{link}</td>
                 </tr>

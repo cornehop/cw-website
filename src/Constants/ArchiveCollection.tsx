@@ -8,6 +8,6 @@ export function getArchiveCollection(){
     // Add all previous published items to the coll and return
     coll.push(new ArchiveItem(newsletter2, ArchiveItemType.newsletter, "Nieuwsbrief juli 2019"));
     coll.push(new ArchiveItem(newsletter1, ArchiveItemType.newsletter, "Nieuwsbrief mei 2019"));
-    console.log(coll);
+
     return coll;
 }

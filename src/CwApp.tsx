@@ -5,7 +5,6 @@ import { Body } from "./Components/Body";
 import { PageTitles } from "./Constants/PageTitles";
 import { HomePage } from "./Components/Pages/HomePage";
 import { ArchivePage } from "./Components/Pages/ArchivePage";
-import { Menu } from "./Components/Menu";
 
 interface CwAppState{
     mainCurrentPage: string,

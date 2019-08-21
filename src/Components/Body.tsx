@@ -2,7 +2,6 @@ import React from "react";
 import { MainContent } from "./MainContent";
 import { Container, Row, Col } from 'react-bootstrap';
 import { InfoBar } from "./InfoBar/InfoBar";
-import { Menu } from "./Menu";
 
 interface BodyProps{
     mainCurrentPage: string,

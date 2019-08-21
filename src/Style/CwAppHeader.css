@@ -6,13 +6,13 @@ h3{
     margin-top: 0;
 }
 
-a h1{
-    cursor: pointer;
-}
-
 .cw-header{
     background-color: white;
     padding-bottom: 1rem;
+}
+
+.cw-header h1{
+    cursor: pointer;
 }
 
 .cw-header-left{

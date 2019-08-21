@@ -8,7 +8,7 @@ export class HeaderTitleWithSubTitle extends React.Component<HeaderTitleWithSubT
     render(){
         return (
             <div>
-                <a onClick={this.props.headerClick}><h1>Carlos Wessels</h1></a>
+                <h1 onClick={this.props.headerClick}>Carlos Wessels</h1>
                 <h3>Zendingswerker bij Operatie Mobilisatie in Moldavië</h3>
             </div>
         );
