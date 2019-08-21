@@ -21,12 +21,21 @@ export class ContentWhoIsCarlos extends React.Component{
             >Operatie Mobilisatie in Moldavië</a>
         )
     }
+
+    renderMoldovaLink(){
+        return (
+            <a href="https://nl.wikipedia.org/wiki/Moldavi%C3%AB_(land)"
+               target="_blank"
+               rel="noopener noreferrer"
+            >Moldavië</a>
+        )
+    }
     
     getContentText(){
         return (
             <div>
                 Mijn naam is Carlos en sinds september 2019 werk ik als zendingswerker 
-                voor {this.renderOmMoldovaLink()}. In Moldavië maak ik onderdeel uit 
+                voor {this.renderOmMoldovaLink()}. In {this.renderMoldovaLink()} maak ik onderdeel uit 
                 van een team van Operatie Mobilisatie die het evangelie onder de mensen 
                 in Moldavië verspreiden. In eerste instantie zal ik voornamelijk op de 
                 achtergrond aan het werk zijn, in de hoofdstad Chișinău. Daarna ga ik een 
@@ -40,7 +49,7 @@ export class ContentWhoIsCarlos extends React.Component{
 
     getPicture(){
         return (
-            <Image src={Picture} fluid roundedCircle />
+            <Image src={Picture} className="cw-image-head" fluid roundedCircle />
         );
     }
     
@@ -48,11 +57,9 @@ export class ContentWhoIsCarlos extends React.Component{
         return (
             <Container className="content-paragraph" fluid>
                 <Row>
-                    <Col className="align-self-center" xs={6} sm={7} md={9} lg={10}>
-                        {this.getContentText()}
-                    </Col>
-                    <Col className="align-self-center" xs={6} sm={5} md={3} lg={2}>
+                    <Col className="align-self-center">
                         {this.getPicture()}
+                        {this.getContentText()}
                     </Col>
                 </Row>
             </Container>

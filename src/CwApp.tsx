@@ -5,6 +5,7 @@ import { Body } from "./Components/Body";
 import { PageTitles } from "./Constants/PageTitles";
 import { HomePage } from "./Components/Pages/HomePage";
 import { ArchivePage } from "./Components/Pages/ArchivePage";
+import { Menu } from "./Components/Menu";
 
 interface CwAppState{
     mainCurrentPage: string,
@@ -43,7 +44,9 @@ export class CwApp extends React.Component<{}, CwAppState>{
     render(){
         return (
             <React.Fragment>
-                <Header headerClick={() => this.setContent("home")} />
+                <Header headerClick={() => this.setContent("home")}
+                        mainCurrentPage={this.state.mainCurrentPage}
+                        updateContent={(page: string) => this.setContent(page)} />
                 <Body mainContent={this.state.mainContent}
                       mainTitle={this.state.mainTitle}
                       mainCurrentPage={this.state.mainCurrentPage}
