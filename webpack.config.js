@@ -6,7 +6,7 @@ module.exports = {
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: [".ts", ".tsx"]
+        extensions: [".mjs", ".js", ".ts", ".tsx", ".pdf"]
     },
 
     module: {
@@ -32,6 +32,11 @@ module.exports = {
                 exclude: [/node_modules/],
                 loader: "file-loader"
             },
+            {
+                test: /\.(pdf)$/i,
+                exclude: [/node_modules/],
+                loader: "file-loader"
+            }
         ]
     },
 
@@ -42,6 +47,7 @@ module.exports = {
     externals: {
         "react": "React",
         "react-dom": "ReactDOM",
-        "react-bootstrap": "ReactBootstrap"
+        "react-bootstrap": "ReactBootstrap",
+        "react-icons": "ReactIcons"
     }
 };
