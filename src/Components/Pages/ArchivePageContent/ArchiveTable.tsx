@@ -1,19 +1,40 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 import { getArchiveCollection } from "../../../Constants/ArchiveCollection";
-import { ArchiveItem } from "../../../Domain/ArchiveItem";
+import { ArchiveItem, ArchiveItemType } from "../../../Domain/ArchiveItem";
 import { formatDate } from "../../../Domain/CustomDate";
+import { FaRegFilePdf, FaRegFileVideo, FaRegQuestionCircle } from "react-icons/fa";
 
 export class ArchiveTable extends React.Component{
+    private getFileTypeIcon(type: ArchiveItemType){
+        if (type === ArchiveItemType.newsletter){
+            return (<FaRegFilePdf />);
+        }
+        else if (type === ArchiveItemType.video){
+            return (<FaRegFileVideo />);
+        }
+
+        return (<FaRegQuestionCircle />);
+    }
+
+    private getFileLink(icon: JSX.Element, name: string, file: string){
+        return (
+            <a href={file}
+               target="_blank">
+                   {icon} {name}
+            </a>
+        )
+    }
+    
     private getTableContent(){
         let tableContent: JSX.Element[] = [];
         let publishedItems: ArchiveItem[] = getArchiveCollection();
-        publishedItems.map((item: ArchiveItem) => {
+        publishedItems.map((item: ArchiveItem, index: number) => {
+            let icon = this.getFileTypeIcon(item.itemType);
+            let link = this.getFileLink(icon, item.name, item.file);
             tableContent.push(
-                <tr>
-                    <td></td>
-                    <td>{item.name}</td>
-                    <td>{formatDate(item.date)}</td>
+                <tr key={index}>
+                    <td>{link}</td>
                 </tr>
             );
         });
@@ -26,9 +47,7 @@ export class ArchiveTable extends React.Component{
             <Table striped bordered hover>
                 <thead>
                     <tr>
-                        <th></th>
                         <th>Titel</th>
-                        <th>Datum</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -7,9 +7,11 @@
     "@types/node": "12.7.1",
     "@types/react": "16.9.1",
     "@types/react-dom": "16.8.5",
+    "@types/react-pdf": "^4.0.2",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.11",
     "react-dom": "^16.9.0",
+    "react-icons": "^3.7.0",
     "react-scripts": "3.1.0"
   },
   "scripts": {
@@ -35,6 +37,7 @@
   },
   "devDependencies": {
     "css-loader": "^3.2.0",
+    "file-loader": "^4.2.0",
     "source-map-loader": "^0.2.4",
     "style-loader": "^1.0.0",
     "ts-loader": "^6.0.4",

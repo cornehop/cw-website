@@ -6,7 +6,7 @@ module.exports = {
 
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
-        extensions: [".ts", ".tsx"]
+        extensions: [".ts", ".tsx", ".pdf"]
     },
 
     module: {
@@ -42,6 +42,7 @@ module.exports = {
     externals: {
         "react": "React",
         "react-dom": "ReactDOM",
-        "react-bootstrap": "ReactBootstrap"
+        "react-bootstrap": "ReactBootstrap",
+        "react-icons": "ReactIcons"
     }
 };

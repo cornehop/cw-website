@@ -4,17 +4,17 @@ export enum ArchiveItemType{
 }
 
 export class ArchiveItem{
+    file: string;
     itemType: ArchiveItemType;
-    date: Date;
     name: string;
 
     constructor(
+        file: string,
         itemType: ArchiveItemType,
-        date: Date,
         name: string
     ){
+        this.file = file;
         this.itemType = itemType;
-        this.date = date;
         this.name = name;
     }
 }
