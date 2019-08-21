@@ -6,7 +6,20 @@ h3{
     margin-top: 0;
 }
 
+a h1{
+    cursor: pointer;
+}
+
 .cw-header{
+    background-color: white;
+    padding-bottom: 1rem;
+}
+
+.cw-header-left{
+    min-height: 125px;
+}
+
+.cw-header-right{
     background-position: right top;
     background-repeat: no-repeat;
     background-attachment: fixed;
