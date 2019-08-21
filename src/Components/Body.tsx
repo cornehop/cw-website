@@ -16,15 +16,8 @@ export class Body extends React.Component<BodyProps>{
         return (
             <Container fluid>
                 <Row>
-                    <Col xs={12} sm={6}>
-                        <Container fluid>
-                            <Row>
-                                <Col>
-                                    <Menu currentPage={this.props.mainCurrentPage}
-                                          homeClick={() => this.props.updateContent("home")}
-                                          archiveClick={() => this.props.updateContent("archive")} />
-                                </Col>
-                            </Row>
+                    <Col xs={12} sm={6} md={8}>
+                        <Container fluid className="container-no-space-left">
                             <Row>
                                 <Col>
                                     <MainContent pageTitle={this.props.mainTitle}
@@ -33,7 +26,7 @@ export class Body extends React.Component<BodyProps>{
                             </Row>
                         </Container>
                     </Col>
-                    <Col xs={12} sm={6}>
+                    <Col xs={12} sm={6} md={4}>
                         <InfoBar />
                     </Col>
                 </Row>

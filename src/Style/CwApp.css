@@ -1,6 +1,10 @@
 .cw-menu{
     padding: 15px;
-    margin-bottom: 2rem;
+    padding-bottom: 0;
+}
+
+.container-no-space-left{
+    padding-left: 0;
 }
 
 .content-paragraph{
@@ -28,6 +32,7 @@
 
 .cw-infobar .card a{
     color: white;
+    text-decoration: underline;
 }
 
 .cw-infobar .card a:hover{
@@ -56,6 +61,7 @@
     font-family: "Lato",Arial,Helvetica,sans-serif;
     font-weight: bold;
     margin-top: 1rem;
+    text-decoration: none !important;
 }
 
 .cw-newsletterblock-form{
@@ -64,4 +70,10 @@
 
 .cw-archive-container{
     margin-top: 1rem;
+}
+
+.cw-image-head{
+    float: left;
+    height: 150px;
+    margin: 15px 15px 0 0;
 }

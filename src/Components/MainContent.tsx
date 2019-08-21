@@ -9,7 +9,7 @@ interface MainContentProps{
 export class MainContent extends React.Component<MainContentProps>{
     render(){
         return (
-            <Container fluid>
+            <Container fluid className="container-no-space-left">
                 <Row>
                     <Col xs={12}>
                         <h2>{this.props.pageTitle}</h2>
