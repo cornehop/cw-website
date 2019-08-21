@@ -1,25 +1,28 @@
 import React from "react";
 import { HeaderTitleWithSubTitle } from "./HeaderTitleWithSubTitle";
 import "../../Style/CwAppHeader.css";
-import { HeaderFooter } from "./HeaderFooter";
 import Background from "../../Assets/banner_image.png";
-import { Navbar, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 var style = {
     backgroundImage: "url(" + Background + ")"
 }
 
-export class Header extends React.Component{
+interface HeaderProps{
+    headerClick: () => void;
+}
+
+export class Header extends React.Component<HeaderProps>{
     render(){
         return (
             <Container fluid className="cw-header sticky-top">
-                    <Row>
-                        <Col xs={12} md={6} className="cw-header-left">
-                            <HeaderTitleWithSubTitle />
-                        </Col>
-                        <Col xs={0} md={6} className="cw-header-right" style={style}></Col>
-                    </Row>
-                </Container>
+                <Row>
+                    <Col xs={12} md={6} className="cw-header-left">
+                        <HeaderTitleWithSubTitle headerClick={this.props.headerClick} />
+                    </Col>
+                    <Col xs={0} md={6} className="cw-header-right" style={style}></Col>
+                </Row>
+            </Container>
         );
     }
 }

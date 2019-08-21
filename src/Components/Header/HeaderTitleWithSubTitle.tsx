@@ -1,10 +1,14 @@
 import React from "react";
 
-export class HeaderTitleWithSubTitle extends React.Component{
+interface HeaderTitleWithSubTitleProps{
+    headerClick: () => void;
+}
+
+export class HeaderTitleWithSubTitle extends React.Component<HeaderTitleWithSubTitleProps>{
     render(){
         return (
             <div>
-                <h1>Carlos Wessels</h1>
+                <a onClick={this.props.headerClick}><h1>Carlos Wessels</h1></a>
                 <h3>Zendingswerker bij Operatie Mobilisatie in Moldavië</h3>
             </div>
         );
