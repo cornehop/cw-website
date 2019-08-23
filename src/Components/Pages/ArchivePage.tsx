@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet'
 import { Archive } from "./ArchivePageContent/Archive";
 import { Container, Row, Col } from 'react-bootstrap';
 import { PageTitles } from "../../Constants/PageTitles";
@@ -16,19 +17,25 @@ export class ArchivePage extends React.Component{
     
     render(){
         return (
-            <Container fluid className="content-paragraph">
-                <Row>
-                    <Col>
-                        <h2>{PageTitles.ArchivePage}</h2>
-                    </Col>
-                </Row>
-                <Row>
-                    <Col>{this.getText()}</Col>
-                </Row>
-                <Row>
-                    <Archive />
-                </Row>
-            </Container>
+            <React.Fragment>
+                <Helmet>
+                    <title>Carlos Wessels - Nieuwsbrieven</title>
+                    <meta name="description" content="Overzicht van alle eerder verzonden nieuwsbrieven en filmpjes." />
+                </Helmet>
+                <Container fluid className="content-paragraph">
+                    <Row>
+                        <Col>
+                            <h2>{PageTitles.ArchivePage}</h2>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>{this.getText()}</Col>
+                    </Row>
+                    <Row>
+                        <Archive />
+                    </Row>
+                </Container>
+            </React.Fragment>
         )
     }
 }

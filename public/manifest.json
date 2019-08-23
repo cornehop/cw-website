@@ -1,6 +1,6 @@
 {
   "short_name": "Carlos Wessels",
-  "name": "Zendingswerker voor Operatie Mobilisatie in Moldavië",
+  "name": "Carlos Wessels: Zendingswerker voor Operatie Mobilisatie in Moldavië",
   "icons": [
     {
       "src": "favicon.ico",
@@ -15,6 +15,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#D22630",
   "background_color": "#ffffff"
 }
