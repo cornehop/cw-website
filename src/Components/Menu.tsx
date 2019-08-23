@@ -4,8 +4,6 @@ import { ButtonGroup } from "react-bootstrap";
 
 export class Menu extends React.Component{    
     render(){
-        var location = document.location.pathname; // "/" of "/newsletters"
-
         return (
             <ButtonGroup>
                 <Link className={"btn btn-outline-danger btn-lg"} to="/">Wie is Carlos?</Link>
