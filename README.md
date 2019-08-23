@@ -20,7 +20,7 @@ npx webpack -p
 ```
 Then build the production code
 ```bash
-npm build -p
+npm run build -p
 ```
 After we done this, there will be a build folder in the project folder.
 The contents of this folder can be transfered to the server using (S)FTP.
