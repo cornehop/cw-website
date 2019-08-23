@@ -7,7 +7,7 @@ import { PageTitles } from "../../Constants/PageTitles";
 export class HomePage extends React.Component{
     render(){
         return (
-            <Container className="content-paragraph">
+            <Container className="content-paragraph" fluid>
                 <Row>
                     <Col>
                         <h2>{PageTitles.HomePage}</h2>
