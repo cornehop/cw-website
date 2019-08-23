@@ -1,6 +1,7 @@
 import React from "react";
 import { Archive } from "./ArchivePageContent/Archive";
 import { Container, Row, Col } from 'react-bootstrap';
+import { PageTitles } from "../../Constants/PageTitles";
 
 export class ArchivePage extends React.Component{
     getText(){
@@ -16,6 +17,11 @@ export class ArchivePage extends React.Component{
     render(){
         return (
             <Container fluid className="content-paragraph">
+                <Row>
+                    <Col>
+                        <h2>{PageTitles.ArchivePage}</h2>
+                    </Col>
+                </Row>
                 <Row>
                     <Col>{this.getText()}</Col>
                 </Row>
