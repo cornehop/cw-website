@@ -7,7 +7,13 @@
 
 I could have made the website with Wordpress. That would be the easy way.
 But I wanted to build an application using React from scratch. This project gave me that oppertunity. 
-This is a React app using Webpack, react-bootstrap and react-icons.
+
+This is a React app using:
+- Webpack
+- react-router-dom
+- react-helmet
+- react-bootstrap
+- react-icons
 
 ## Run and publish the site
 To run the project on your local machine just use the following command:
