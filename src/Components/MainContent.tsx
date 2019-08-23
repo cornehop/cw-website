@@ -11,12 +11,12 @@ export class MainContent extends React.Component<MainContentProps>{
         return (
             <Container fluid className="container-no-space-left">
                 <Row>
-                    <Col xs={12}>
+                    <Col>
                         <h2>{this.props.pageTitle}</h2>
                     </Col>
                 </Row>
                 <Row>
-                    <Col xs={12}>
+                    <Col>
                         {this.props.pageContent}
                     </Col>
                 </Row>

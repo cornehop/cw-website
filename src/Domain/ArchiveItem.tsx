@@ -1,7 +1,4 @@
-export enum ArchiveItemType{
-    newsletter,
-    video
-}
+import { ArchiveItemType } from "./ArchiveItemType";
 
 export class ArchiveItem{
     file: string;

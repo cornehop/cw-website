@@ -1,7 +1,8 @@
 import React from "react";
 import { Table } from "react-bootstrap";
 import { getArchiveCollection } from "../../../Constants/ArchiveCollection";
-import { ArchiveItem, ArchiveItemType } from "../../../Domain/ArchiveItem";
+import { ArchiveItem } from "../../../Domain/ArchiveItem";
+import { ArchiveItemType } from "../../../Domain/ArchiveItemType";
 import { FaRegFilePdf, FaRegFileVideo, FaRegQuestionCircle } from "react-icons/fa";
 
 export class ArchiveTable extends React.Component{
@@ -45,11 +46,6 @@ export class ArchiveTable extends React.Component{
     render(){
         return (
             <Table striped bordered hover>
-                <thead>
-                    <tr>
-                        <th>Titel</th>
-                    </tr>
-                </thead>
                 <tbody>
                     {this.getTableContent()}
                 </tbody>

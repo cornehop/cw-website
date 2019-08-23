@@ -1,4 +1,5 @@
-import { ArchiveItem, ArchiveItemType } from "../Domain/ArchiveItem";
+import { ArchiveItem } from "../Domain/ArchiveItem";
+import { ArchiveItemType } from "../Domain/ArchiveItemType";
 import newsletter1 from "../Assets/Newsletters/newsletter1.pdf";
 import newsletter2 from "../Assets/Newsletters/newsletter2.pdf";
 
