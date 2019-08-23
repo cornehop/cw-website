@@ -1,14 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-interface HeaderTitleWithSubTitleProps{
-    headerClick: () => void;
-}
-
-export class HeaderTitleWithSubTitle extends React.Component<HeaderTitleWithSubTitleProps>{
+export class HeaderTitleWithSubTitle extends React.Component{
     render(){
         return (
             <div>
-                <h1 onClick={this.props.headerClick}>Carlos Wessels</h1>
+                <Link to="/"><h1>Carlos Wessels</h1></Link>
                 <h3>Zendingswerker bij Operatie Mobilisatie in Moldavië</h3>
             </div>
         );

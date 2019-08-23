@@ -15,6 +15,10 @@ h3{
     cursor: pointer;
 }
 
+.cw-header .btn-group{
+    padding-left: 15px;
+}
+
 .cw-header-left{
     min-height: 125px;
 }

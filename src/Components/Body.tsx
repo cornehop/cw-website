@@ -1,16 +1,11 @@
 import React from "react";
-import { MainContent } from "./MainContent";
 import { Container, Row, Col } from 'react-bootstrap';
 import { InfoBar } from "./InfoBar/InfoBar";
+import { Switch, Route } from "react-router";
+import { ArchivePage } from "./Pages/ArchivePage";
+import { HomePage } from "./Pages/HomePage";
 
-interface BodyProps{
-    mainCurrentPage: string,
-    mainTitle: string,
-    mainContent: JSX.Element,
-    updateContent: (page: string) => void;
-}
-
-export class Body extends React.Component<BodyProps>{
+export class Body extends React.Component{
     render(){
         return (
             <Container fluid>
@@ -19,8 +14,10 @@ export class Body extends React.Component<BodyProps>{
                         <Container fluid className="container-no-space-left">
                             <Row>
                                 <Col>
-                                    <MainContent pageTitle={this.props.mainTitle}
-                                                 pageContent={this.props.mainContent} />
+                                    <Switch>
+                                        <Route path='/newsletters' component={ArchivePage} />
+                                        <Route path='/' component={HomePage} />
+                                    </Switch>
                                 </Col>
                             </Row>
                         </Container>
