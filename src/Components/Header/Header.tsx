@@ -1,6 +1,6 @@
 import React from "react";
 import { HeaderTitleWithSubTitle } from "./HeaderTitleWithSubTitle";
-import "../../Style/CwAppHeader.css";
+import "../../Styles/CwAppHeader.css";
 import Background from "../../Assets/banner_image.png";
 import { Container, Row, Col } from "react-bootstrap";
 import { Menu } from "../Menu";

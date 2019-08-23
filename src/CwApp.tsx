@@ -1,5 +1,5 @@
 import React from "react";
-import "./Style/CwApp.css";
+import "./Styles/CwApp.css";
 import { Header } from "./Components/Header/Header";
 import { Body } from "./Components/Body";
 import { PageTitles } from "./Constants/PageTitles";

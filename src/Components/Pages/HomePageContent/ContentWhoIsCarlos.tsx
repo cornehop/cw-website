@@ -9,7 +9,7 @@ export class ContentWhoIsCarlos extends React.Component{
             <a href="https://www.om.org/en/ministry-profile/mission-discipleship-training"
                target="_blank"
                rel="noopener noreferrer"
-            > Mission Discipleship Training</a>
+            >Mission Discipleship Training</a>
         )
     }
 
@@ -38,8 +38,8 @@ export class ContentWhoIsCarlos extends React.Component{
                 voor {this.renderOmMoldovaLink()}. In {this.renderMoldovaLink()} maak ik onderdeel uit 
                 van een team van Operatie Mobilisatie die het evangelie onder de mensen 
                 in Moldavië verspreiden. In eerste instantie zal ik voornamelijk op de 
-                achtergrond aan het werk zijn, in de hoofdstad Chișinău. Daarna ga ik een 
-                {this.renderMdtLink()} volgen, waarna ik als evangelist aan het 
+                achtergrond aan het werk zijn, in de hoofdstad Chișinău. 
+                Daarna ga ik een {this.renderMdtLink()} volgen, waarna ik als evangelist aan het 
                 werk kan gaan. Gedurende deze periode zal ik bezig zijn met het leren van 
                 de Roemeense taal zodat ik kan evangeliseren in de taal die de lokale 
                 bevolking spreekt.
@@ -49,7 +49,7 @@ export class ContentWhoIsCarlos extends React.Component{
 
     getPicture(){
         return (
-            <Image src={Picture} className="cw-image-head" fluid roundedCircle />
+            <Image src={Picture} className="cw-image-head" roundedCircle />
         );
     }
     
