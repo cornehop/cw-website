@@ -3,7 +3,7 @@ import { HeaderTitleWithSubTitle } from "./HeaderTitleWithSubTitle";
 import "../../Styles/CwAppHeader.css";
 import Background from "../../Assets/banner_image.png";
 import { Container, Row, Col } from "react-bootstrap";
-import { Menu } from "../Menu";
+import Menu from "../Menu";
 
 var style = {
     backgroundImage: "url(" + Background + ")"
