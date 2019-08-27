@@ -10,6 +10,8 @@ But I wanted to build an application using React from scratch. This project gave
 
 This is a React app using:
 - Webpack
+- Redux
+- react-redux
 - react-router-dom
 - react-helmet
 - react-bootstrap
@@ -35,6 +37,5 @@ The contents of this folder can be transfered to the server using (S)FTP.
 I would like to add the following items to the website in the future:
 
 - A page that contains some contact information
-- Multilanguage support (Dutch & English)
 - Subscribing to the newsletter using a simple form
 - (Optional) A fullscreen landingpage in front of the homepage
