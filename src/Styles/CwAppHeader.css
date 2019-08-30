@@ -17,6 +17,11 @@ h3{
 
 .cw-header-btn-group{
     padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cw-header-btn-group .dropdown-menu{
+    min-width: unset;
 }
 
 .cw-header-left{

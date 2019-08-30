@@ -1,6 +1,6 @@
 import React from "react";
 import "./Styles/CwApp.css";
-import { Header } from "./Components/Header/Header";
+import Header from "./Components/Header/Header";
 import { Body } from "./Components/Body";
 import { BrowserRouter } from "react-router-dom";
 
