@@ -11,7 +11,7 @@ interface CwAppStateAction{
 }
 
 var defaultState: CwAppState = {
-    uiLanguage: "nl-NL" // TODO Get this from some kind of environment or config file
+    uiLanguage: "nl" // TODO Get this from some kind of environment or config file
 }
 
 function updateCwAppState(state = defaultState, action: CwAppStateAction){

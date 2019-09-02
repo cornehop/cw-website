@@ -4,6 +4,7 @@ import { ContentWhoIsCarlos } from "./HomePageContent/ContentWhoIsCarlos";
 import { ContentWhyMoldova } from "./HomePageContent/ContentWhyMoldova";
 import { Container, Row, Col } from "react-bootstrap";
 import { PageTitles } from "../../Constants/PageTitles";
+import { Trans } from "react-i18next";
 
 export class HomePage extends React.Component{
     render(){
@@ -17,7 +18,7 @@ export class HomePage extends React.Component{
                 <Container className="content-paragraph" fluid>
                     <Row>
                         <Col>
-                            <h2>{PageTitles.HomePage}</h2>
+                            <Trans i18nKey={"homepage.title"}><h2>{PageTitles.HomePage}</h2></Trans>
                         </Col>
                     </Row>
                     <Row>

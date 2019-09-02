@@ -1,4 +1,4 @@
 export enum LanguageCodes{
-    NL = "nl-NL",
-    EN = "en-EN"
+    NL = "nl",
+    EN = "en"
 }
