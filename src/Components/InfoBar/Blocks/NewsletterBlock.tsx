@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from 'react-bootstrap';
+import { Trans } from "react-i18next";
 // import { TextInput } from "../../Inputs/TextInput";
 // import { EmailInput } from "../../Inputs/EmailInput";
 
@@ -22,12 +23,12 @@ export class NewsletterBlock extends React.Component{
             //     in Moldavië doe en meemaak. Wilt u hiervan op de hoogte 
             //     blijven? Vul dan uw naam en e-mailadres hieronder in.
             // </div>
-            <div>
+            <Trans i18nKey="infobar.keepupdated.content">
                 Gedurende mijn verblijf in Moldavië worden er regelmatig 
                 filmpjes en nieuwsbrieven gemaakt waarin ik vertel wat ik 
                 in Moldavië doe en meemaak. Wilt u hiervan op de hoogte 
                 blijven? Dan kunt u zich aanmelden door een e-mail te sturen naar: {this.getSubscribtionEmailLink()}.
-            </div>
+            </Trans>
         )
     }
 
@@ -62,8 +63,10 @@ export class NewsletterBlock extends React.Component{
                 <Row>
                     <Col>
                         <small className="text-muted">
-                            * We zullen uw e-mailadres voor geen enkel ander doeleinde gebruiken
-                            dan het versturen van onze nieuwsbrief.
+                            * <Trans i18nKey="infobar.keepupdated.bottomnote">
+                                We zullen uw e-mailadres voor geen enkel ander doeleinde gebruiken
+                                dan het versturen van onze nieuwsbrief.
+                              </Trans>
                         </small>
                     </Col>
                 </Row>

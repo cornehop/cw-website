@@ -11,14 +11,14 @@ export class InfoBar extends React.Component{
             <Container className="cw-infobar" fluid>
                 <Row>
                     <Col>
-                        <InfoBlock title={PageTitles.SupportBlock}>
+                        <InfoBlock title={PageTitles.SupportBlock} titleTransKey="infobar.support.title">
                             <SupportBlock />
                         </InfoBlock>
                     </Col>
                 </Row>
                 <Row>
                     <Col>
-                        <InfoBlock title={PageTitles.NewsletterBlock}>
+                        <InfoBlock title={PageTitles.NewsletterBlock} titleTransKey="infobar.keepupdated.title">
                             <NewsletterBlock />
                         </InfoBlock>
                     </Col>
