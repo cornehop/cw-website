@@ -10,12 +10,12 @@ But I wanted to build an application using React from scratch. This project gave
 
 This is a React app using:
 - Webpack
-- Redux
-- react-redux
+- Redux & react-redux
 - react-router-dom
 - react-helmet
 - react-bootstrap
 - react-icons
+- i18next & react-i18next
 
 ## Run and publish the site
 To run the project on your local machine just use the following command:
