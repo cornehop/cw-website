@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import Picture from "../../../Assets/cw.jpg";
-
+import { Trans } from "react-i18next";
 
 export class ContentWhoIsCarlos extends React.Component{
     renderMdtLink(){
@@ -33,7 +33,7 @@ export class ContentWhoIsCarlos extends React.Component{
     
     getContentText(){
         return (
-            <div>
+            <Trans i18nKey="homepage.whoiscarlos">
                 Mijn naam is Carlos en sinds september 2019 werk ik als zendingswerker 
                 voor {this.renderOmMoldovaLink()}. In {this.renderMoldovaLink()} maak ik onderdeel uit 
                 van een team van Operatie Mobilisatie die het evangelie onder de mensen 
@@ -43,13 +43,13 @@ export class ContentWhoIsCarlos extends React.Component{
                 werk kan gaan. Gedurende deze periode zal ik bezig zijn met het leren van 
                 de Roemeense taal zodat ik kan evangeliseren in de taal die de lokale 
                 bevolking spreekt.
-            </div>
+            </Trans>
         );
     }
 
     getPicture(){
         return (
-            <Image src={Picture} className="cw-image-head" roundedCircle />
+            <Image src={Picture} alt={"Carlos Wessels"} className="cw-image-head" roundedCircle />
         );
     }
     

@@ -15,8 +15,13 @@ h3{
     cursor: pointer;
 }
 
-.cw-header .btn-group{
+.cw-header-btn-group{
     padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cw-header-btn-group .dropdown-menu{
+    min-width: unset;
 }
 
 .cw-header-left{
@@ -36,11 +41,11 @@ h3{
     padding: 1rem;
 }
 
-.cw-header-footer{
-    visibility: hidden; /* TODO CH REMOVE WHEN HEADER IS BEING FIXED */
-    margin-top: 10px;
-}
-
 .cw-header-image{
     max-height: 120px;
+}
+
+#menu-dropdown svg{
+    width: 2rem;
+    height: 2rem;
 }

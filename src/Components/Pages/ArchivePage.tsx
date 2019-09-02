@@ -3,15 +3,16 @@ import { Helmet } from 'react-helmet'
 import { Archive } from "./ArchivePageContent/Archive";
 import { Container, Row, Col } from 'react-bootstrap';
 import { PageTitles } from "../../Constants/PageTitles";
+import { Trans } from "react-i18next";
 
 export class ArchivePage extends React.Component{
     getText(){
         return (
-            <div>
+            <Trans i18nKey="archive.content">
                 Gedurende mijn verblijf in Moldavië worden er regelmatig filmpjes en 
                 nieuwsbrieven gemaakt waarin ik vertel wat ik in Moldavië doe en meemaak.
                 Hieronder vind u een overzicht van de eerder verzonden items.
-            </div>
+            </Trans>
         );
     }
     
@@ -25,7 +26,7 @@ export class ArchivePage extends React.Component{
                 <Container fluid className="content-paragraph">
                     <Row>
                         <Col>
-                            <h2>{PageTitles.ArchivePage}</h2>
+                            <Trans i18nKey="archive.title"><h2>{PageTitles.ArchivePage}</h2></Trans>
                         </Col>
                     </Row>
                     <Row>
