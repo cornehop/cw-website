@@ -14,7 +14,7 @@ export class ContentWhyMoldova extends React.Component{
                 gesprek met mensen die ik tijdens eerdere reizen had ontmoet en aan 
                 mij vroegen of ik voor een langere termijn wil komen, en de derde keer 
                 tijdens het bidden door middel van een lied dat op de achtergrond aan 
-                stond. Drie is het getal van de volheid en komt veel terug in de Bijbel, 
+                stond. Het getal drie is een getal dat veel terugkomt in de Bijbel, 
                 ik weet zeker dat God dit heeft gebruikt omdat getallen mij erg aanspreken. 
                 Na een proces van een aantal jaren voel ik me nu geroepen voor een 
                 langere tijd er te gaan wonen.

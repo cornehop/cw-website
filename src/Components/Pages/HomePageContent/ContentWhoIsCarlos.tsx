@@ -37,10 +37,10 @@ export class ContentWhoIsCarlos extends React.Component{
                 Mijn naam is Carlos en sinds september 2019 werk ik als zendingswerker 
                 voor {this.renderOmMoldovaLink()}. In {this.renderMoldovaLink()} maak ik onderdeel uit 
                 van een team van Operatie Mobilisatie die het evangelie onder de mensen 
-                in Moldavië verspreiden. In eerste instantie zal ik voornamelijk op de 
+                in Moldavië verspreidt. In eerste instantie zal ik voornamelijk op de 
                 achtergrond aan het werk zijn, in de hoofdstad Chișinău. 
                 Daarna ga ik een {this.renderMdtLink()} volgen, waarna ik als evangelist aan het 
-                werk kan gaan. Gedurende deze periode zal ik bezig zijn met het leren van 
+                werk kan gaan. Gedurende deze periode zal ik ook bezig zijn met het leren van 
                 de Roemeense taal zodat ik kan evangeliseren in de taal die de lokale 
                 bevolking spreekt.
             </Trans>
