@@ -14,3 +14,10 @@ export function getArchiveCollection(){
 
     return coll;
 }
+
+export function getArchiveCollection2() {
+    let coll : ArchiveItem[] = [];
+    // TODO CH parse ArchiveCollection.json
+    // TODO CH return a collection of items
+    return coll;
+}

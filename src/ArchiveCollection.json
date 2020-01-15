@@ -1,0 +1,26 @@
+{
+    "newsletters": [
+        {
+            "filepath": "%PUBLIC_URL%/media/pdf/newsletter1.pdf",
+            "name": "Nieuwsbrief mei 2019",
+            "date": "2019-05-01"
+        },
+        {
+            "filepath": "%PUBLIC_URL%/media/pdf/newsletter2.pdf",
+            "name": "Nieuwsbrief juli 2019",
+            "date": "2019-07-01"
+        },
+        {
+            "filepath": "%PUBLIC_URL%/media/pdf/newsletter3.pdf",
+            "name": "Nieuwsbrief oktober 2019",
+            "date": "2019-10-01"
+        }
+    ],
+    "videos": [
+        {
+            "filepath": "%PUBLIC_URL%/media/videos/video1.mp4",
+            "name": "Videoupdate december 2019",
+            "date": "2019-12-01"
+        }
+    ]
+}

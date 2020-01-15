@@ -11,6 +11,8 @@
 # production
 /build
 /dist
+/public/media/pdf/*.pdf
+/public/media/videos/*.mp4
 
 # misc
 .DS_Store
