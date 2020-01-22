@@ -1,11 +1,40 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-import { getArchiveCollection } from "../../../Constants/ArchiveCollection";
 import { ArchiveItem } from "../../../Domain/ArchiveItem";
-import { ArchiveItemType } from "../../../Domain/ArchiveItemType";
+import { ArchiveItemType, getArchiveItemType } from "../../../Domain/ArchiveItemType";
 import { FaRegFilePdf, FaRegFileVideo, FaRegQuestionCircle } from "react-icons/fa";
 
-export class ArchiveTable extends React.Component{
+interface ArchiveTableState {
+    data: ArchiveItem[]
+}
+
+export class ArchiveTable extends React.Component<{}, ArchiveTableState> {
+    constructor(props: {}) {
+        super(props);
+
+        this.state = {
+            data: []
+        };
+    }
+
+    componentDidMount() {
+        fetch('/ArchiveCollection.json')
+        .then((res) => res.json())
+        .then((data) => {
+            const items: ArchiveItem[] = [];
+            data.map(
+                (item: { filepath: string; type: string; name: string; }) => items.push(
+                    new ArchiveItem(
+                        item.filepath,
+                        getArchiveItemType(item.type),
+                        item.name)
+                    ));
+            this.setState({
+                data: items
+            });
+        })
+    }
+    
     private getFileTypeIcon(type: ArchiveItemType){
         if (type === ArchiveItemType.newsletter){
             return (<FaRegFilePdf />);
@@ -28,8 +57,9 @@ export class ArchiveTable extends React.Component{
     }
     
     private getTableContent(){
+        const { data } = this.state;
         let tableContent: JSX.Element[] = [];
-        let publishedItems: ArchiveItem[] = getArchiveCollection();
+        let publishedItems: ArchiveItem[] = data;
         publishedItems.map((item: ArchiveItem, index: number) => {
             let icon = this.getFileTypeIcon(item.itemType);
             let link = this.getFileLink(icon, item.name, item.file);

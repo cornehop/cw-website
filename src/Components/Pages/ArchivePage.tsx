@@ -20,7 +20,7 @@ export class ArchivePage extends React.Component{
         return (
             <React.Fragment>
                 <Helmet>
-                    <title>Carlos Wessels - Nieuwsbrieven</title>
+                    <title>Carlos Wessels - Publicaties</title>
                     <meta name="description" content="Overzicht van alle eerder verzonden nieuwsbrieven en filmpjes." />
                 </Helmet>
                 <Container fluid className="content-paragraph">
