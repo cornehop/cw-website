@@ -1,0 +1,8 @@
+[
+    {
+        "type": "newsletter|video",
+        "filepath": "/media/pdf|videos/filename.ext",
+        "name": "The name of the file",
+        "date": "date published (YYYY-MM-DD)"
+    }
+]

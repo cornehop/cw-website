@@ -13,6 +13,7 @@
 /dist
 /public/media/pdf/*.pdf
 /public/media/videos/*.mp4
+/public/ArchiveCollection.json
 
 # misc
 .DS_Store
