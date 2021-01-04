@@ -32,10 +32,3 @@ npm run build -p
 ```
 After we done this, there will be a build folder in the project folder.
 The contents of this folder can be transfered to the server using (S)FTP.
-
-## Roadmap
-I would like to add the following items to the website in the future:
-
-- A page that contains some contact information
-- Subscribing to the newsletter using a simple form
-- (Optional) A fullscreen landingpage in front of the homepage
