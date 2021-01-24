@@ -3,8 +3,8 @@ import { DropdownButton, ButtonGroup, Dropdown, Image } from "react-bootstrap";
 import i18n from '../../i18n';
 import { defaultLanguage, LanguageCodes, languageLocalStorageKey } from "../../Domain/LanguageCodes";
 import useLocalstorage from "../../Hooks/useLocalstorage";
-import FlagNL from "../../Assets/nl-flag.png";
-import FlagGB from "../../Assets/gb-flag.png";
+import FlagNL from "../../Assets/nl.svg";
+import FlagGB from "../../Assets/en.svg";
 
 const LanguageSelector = () => {
     const [currentLanguage, setCurrentLanguageState] = useLocalstorage(languageLocalStorageKey, defaultLanguage);

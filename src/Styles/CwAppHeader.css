@@ -45,7 +45,7 @@ h3{
     max-height: 120px;
 }
 
-#menu-dropdown svg{
+.cw-header img {
     width: 2rem;
     height: 2rem;
 }
