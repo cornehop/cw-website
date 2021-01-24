@@ -1,14 +1,14 @@
 import React from "react";
 import { Table } from "react-bootstrap";
-import { ArchiveItem } from "../../../Domain/ArchiveItem";
-import { ArchiveItemType, getArchiveItemType } from "../../../Domain/ArchiveItemType";
+import { ArchiveItem } from "../../Domain/ArchiveItem";
+import { ArchiveItemType, getArchiveItemType } from "../../Domain/ArchiveItemType";
 import { FaRegFilePdf, FaRegFileVideo, FaRegQuestionCircle } from "react-icons/fa";
 
 interface ArchiveTableState {
     data: ArchiveItem[]
 }
 
-export class ArchiveTable extends React.Component<{}, ArchiveTableState> {
+export class ArchiveBlock extends React.Component<{}, ArchiveTableState> {
     constructor(props: {}) {
         super(props);
 
@@ -19,44 +19,44 @@ export class ArchiveTable extends React.Component<{}, ArchiveTableState> {
 
     componentDidMount() {
         fetch('/ArchiveCollection.json')
-        .then((res) => res.json())
-        .then((data) => {
-            const items: ArchiveItem[] = [];
-            data.map(
-                (item: { filepath: string; type: string; name: string; }) => items.push(
-                    new ArchiveItem(
-                        item.filepath,
-                        getArchiveItemType(item.type),
-                        item.name)
+            .then((res) => res.json())
+            .then((data) => {
+                const items: ArchiveItem[] = [];
+                data.map(
+                    (item: { filepath: string; type: string; name: string; }) => items.push(
+                        new ArchiveItem(
+                            item.filepath,
+                            getArchiveItemType(item.type),
+                            item.name)
                     ));
-            this.setState({
-                data: items
-            });
-        })
+                this.setState({
+                    data: items
+                });
+            })
     }
-    
-    private getFileTypeIcon(type: ArchiveItemType){
-        if (type === ArchiveItemType.newsletter){
+
+    private getFileTypeIcon(type: ArchiveItemType) {
+        if (type === ArchiveItemType.newsletter) {
             return (<FaRegFilePdf />);
         }
-        else if (type === ArchiveItemType.video){
+        else if (type === ArchiveItemType.video) {
             return (<FaRegFileVideo />);
         }
 
         return (<FaRegQuestionCircle />);
     }
 
-    private getFileLink(icon: JSX.Element, name: string, file: string){
+    private getFileLink(icon: JSX.Element, name: string, file: string) {
         return (
             <a href={file}
-               target="_blank"
-               rel="noopener noreferrer">
-                   {icon} {name}
+                target="_blank"
+                rel="noopener noreferrer">
+                {icon} {name}
             </a>
         )
     }
-    
-    private getTableContent(){
+
+    private getTableContent() {
         const { data } = this.state;
         let tableContent: JSX.Element[] = [];
         let publishedItems: ArchiveItem[] = data;
@@ -72,8 +72,8 @@ export class ArchiveTable extends React.Component<{}, ArchiveTableState> {
 
         return tableContent;
     }
-    
-    render(){
+
+    render() {
         return (
             <Table striped bordered hover>
                 <tbody>

@@ -1,42 +1,31 @@
 import React from "react";
-import { Helmet } from 'react-helmet'
-import { Archive } from "./ArchivePageContent/Archive";
+// TODO CH: enable Helmet
+// import { Helmet } from 'react-helmet'
+import { useTranslation } from "react-i18next";
 import { Container, Row, Col } from 'react-bootstrap';
-import { PageTitles } from "../../Constants/PageTitles";
-import { Trans } from "react-i18next";
+import { ArchiveBlock } from "../Blocks/ArchiveBlock";
 
-export class ArchivePage extends React.Component{
-    getText(){
-        return (
-            <Trans i18nKey="archive.content">
-                Gedurende mijn verblijf in Moldavië worden er regelmatig filmpjes en 
-                nieuwsbrieven gemaakt waarin ik vertel wat ik in Moldavië doe en meemaak.
-                Hieronder vind u een overzicht van de eerder verzonden items.
-            </Trans>
-        );
-    }
-    
-    render(){
-        return (
-            <React.Fragment>
-                <Helmet>
-                    <title>Carlos Wessels - Publicaties</title>
-                    <meta name="description" content="Overzicht van alle eerder verzonden nieuwsbrieven en filmpjes." />
-                </Helmet>
-                <Container fluid className="content-paragraph">
+const ArchivePage = () => {
+    const { t } = useTranslation();
+    return (
+        <Container fluid className="content-paragraph">
+            <Row>
+                <Col><h2>{t('archive.title')}</h2></Col>
+            </Row>
+            <Row>
+                <Col>{t('archive.content')}</Col>
+            </Row>
+            <Row>
+                <Container className="cw-archive-container" fluid>
                     <Row>
                         <Col>
-                            <Trans i18nKey="archive.title"><h2>{PageTitles.ArchivePage}</h2></Trans>
+                            <ArchiveBlock />
                         </Col>
                     </Row>
-                    <Row>
-                        <Col>{this.getText()}</Col>
-                    </Row>
-                    <Row>
-                        <Archive />
-                    </Row>
                 </Container>
-            </React.Fragment>
-        )
-    }
-}
+            </Row>
+        </Container>
+    );
+};
+
+export default ArchivePage;

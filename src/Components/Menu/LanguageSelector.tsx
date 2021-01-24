@@ -1,27 +1,39 @@
 import React from "react";
-import { DropdownButton, ButtonGroup, Dropdown } from "react-bootstrap";
-import { LanguageCodes } from "../../Constants/LanguageCodes";
-import { LanguageSelectorItem } from "./LanguageSelectorItem";
+import { DropdownButton, ButtonGroup, Dropdown, Image } from "react-bootstrap";
+import i18n from '../../i18n';
+import { defaultLanguage, LanguageCodes, languageLocalStorageKey } from "../../Domain/LanguageCodes";
+import useLocalstorage from "../../Hooks/useLocalstorage";
+import FlagNL from "../../Assets/nl-flag.png";
+import FlagGB from "../../Assets/gb-flag.png";
 
-interface LanguageSelectorProps{
-    currentLanguage?: string,
-    changeLanguage: (eventKey: string) => void
-}
-
-export class LanguageSelector extends React.Component<LanguageSelectorProps>{
-    render(){
-        return (
-            <DropdownButton as={ButtonGroup}
-                            title={<LanguageSelectorItem language={this.props.currentLanguage} />}
-                            variant="outline-danger"
-                            id="language-dropdown">
-                <Dropdown.Item eventKey={LanguageCodes.NL} onSelect={this.props.changeLanguage}>
-                    <LanguageSelectorItem language={LanguageCodes.NL} />
-                </Dropdown.Item>
-                <Dropdown.Item eventKey={LanguageCodes.EN} onSelect={this.props.changeLanguage}>
-                    <LanguageSelectorItem language={LanguageCodes.EN} />
-                </Dropdown.Item>
-            </DropdownButton>
-        )
+const LanguageSelector = () => {
+    const [currentLanguage, setCurrentLanguageState] = useLocalstorage(languageLocalStorageKey, defaultLanguage);
+    const setCurrentLanguage = (eventKey: string) => {
+        setCurrentLanguageState(eventKey);
+        i18n.changeLanguage(eventKey);
     }
+
+    const getCurrentLanguage = () => {
+        if (currentLanguage === LanguageCodes.EN) {
+            return (<Image src={FlagGB} />);
+        }
+
+        return (<Image src={FlagNL} />);
+    }
+
+    return (
+        <DropdownButton as={ButtonGroup}
+            title={getCurrentLanguage()}
+            variant="outline-danger"
+            id="language-dropdown">
+            <Dropdown.Item eventKey={LanguageCodes.NL} onSelect={setCurrentLanguage}>
+                <Image src={FlagNL} />
+            </Dropdown.Item>
+            <Dropdown.Item eventKey={LanguageCodes.EN} onSelect={setCurrentLanguage}>
+                <Image src={FlagGB} />
+            </Dropdown.Item>
+        </DropdownButton>
+    );
 }
+
+export default LanguageSelector;

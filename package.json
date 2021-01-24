@@ -15,7 +15,6 @@
     "react-helmet": "^5.2.1",
     "react-i18next": "^10.12.2",
     "react-icons": "^3.7.0",
-    "react-redux": "^7.1.1",
     "react-router-dom": "^5.0.1",
     "react-scripts": "^3.3.0"
   },
@@ -42,7 +41,6 @@
   },
   "devDependencies": {
     "@types/react-helmet": "^5.0.9",
-    "@types/react-redux": "^7.1.2",
     "@types/react-router-dom": "^4.3.5",
     "css-loader": "^3.2.0",
     "file-loader": "^4.2.0",

@@ -1,38 +1,40 @@
 import React from "react";
-import { Helmet } from 'react-helmet'
-import { ContentWhoIsCarlos } from "./HomePageContent/ContentWhoIsCarlos";
-import { ContentWhyMoldova } from "./HomePageContent/ContentWhyMoldova";
+import { useTranslation } from 'react-i18next';
+// import { Helmet } from 'react-helmet'
+// TODO CH: restore react-helmet
+import { WhoIsCarlosBlock } from "../Blocks/WhoIsCarlosBlock";
 import { Container, Row, Col } from "react-bootstrap";
-import { PageTitles } from "../../Constants/PageTitles";
-import { Trans } from "react-i18next";
 
-export class HomePage extends React.Component{
-    render(){
-        return (
-            <React.Fragment>
-                <Helmet>
-                    <title>Carlos Wessels</title>
-                    <meta name="description" content="Carlos Wessels: zendingswerker voor Operatie Mobilisatie in Moldavië" />
-                </Helmet>
-
-                <Container className="content-paragraph" fluid>
-                    <Row>
-                        <Col>
-                            <Trans i18nKey={"homepage.title"}><h2>{PageTitles.HomePage}</h2></Trans>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <ContentWhoIsCarlos />
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col>
-                            <ContentWhyMoldova />
-                        </Col>
-                    </Row>
-                </Container>
-            </React.Fragment>
-        );
-    }
+const HomePage = () => {
+    const { t } = useTranslation();
+    return (
+        <>
+            <Container className="content-paragraph" fluid>
+                <Row>
+                    <Col>
+                        <h2>{t('homepage.title')}</h2>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <WhoIsCarlosBlock />
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
+                        <Container className="content-paragraph" fluid>
+                            <Row>
+                                <Col><h4>{t('homepage.title.whymoldova')}</h4></Col>
+                            </Row>
+                            <Row>
+                                <Col>{t('homepage.whymoldova')}</Col>
+                            </Row>
+                        </Container>
+                    </Col>
+                </Row>
+            </Container>
+        </>
+    );
 }
+
+export default HomePage;

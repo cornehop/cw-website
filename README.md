@@ -10,7 +10,6 @@ But I wanted to build an application using React from scratch. This project gave
 
 This is a React app using:
 - Webpack
-- Redux & react-redux
 - react-router-dom
 - react-helmet
 - react-bootstrap
