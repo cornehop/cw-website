@@ -19,7 +19,7 @@ module.exports = {
             {
                 test: /\.css$/,
                 exclude: /node_modules/,
-                use:['style-loader','css-loader']
+                use: ['style-loader', 'css-loader']
             },
             // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
             {
@@ -28,7 +28,7 @@ module.exports = {
                 loader: "source-map-loader"
             },
             {
-                test: /\.(jpe?g|png)$/i,
+                test: /\.(jpe?g|png|svg)$/i,
                 exclude: [/node_modules/],
                 loader: "file-loader"
             },
