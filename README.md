@@ -1,7 +1,7 @@
 # Website for Carlos Wessels
 > A simple website for Carlos Wessels, who works for Operation Mobilisation in Moldova.
 
-> You can find the live version at: [https://www.carloswessels.nl](https://www.carloswessels.nl)
+> The site is no longer in use and this repo has been archived!
 
 ## Why React?
 
